@@ -1,4 +1,4 @@
-
+﻿
 require('./dbconnection.js')();
 
 var TelegramBot = require('node-telegram-bot-api');
@@ -38,6 +38,6 @@ bot.onText(/^[^\/]/, function (msg) {
                 	throw err;
 		}		
 		console.log(rows);
-        	bot.sendMessage(chatId, msg.text+" go");
+        	bot.sendMessage(chatId, msg.text+" gogo");
 	});
 });
